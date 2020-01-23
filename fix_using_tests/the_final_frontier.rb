@@ -12,7 +12,8 @@ def crew
 end
 
 def greet_crew (crew)
-  temp = crew.each {|crew_member| "Hello #{crew_member}."}
+  temp = []
+  crew.each {|crew_member| temp << "Hello #{crew_member}."}
   return temp
 end
 
